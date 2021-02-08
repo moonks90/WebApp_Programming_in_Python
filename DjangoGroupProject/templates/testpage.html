@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+</head>
+<body>
+    <a href="{% url 'homepage' %}">Go back to Homepage</a>
+    <p>What is your name?</p>
+    <form action="{% url 'printnamepage' %}" method="get">
+        <input name="name" type="text" width="20px">
+        <input name="submit" type="submit" value="submit">
+    </form>
+</body>
+</html>
